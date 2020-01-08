@@ -19,3 +19,5 @@ RUN apt-get autoremove -y
 RUN rm -r /var/lib/apt/lists/*
 
 RUN docker-php-ext-enable imagick
+
+COPY memory-limit-php.ini /usr/local/etc/php/conf.d/memory-limit-php.ini
